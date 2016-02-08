@@ -6,14 +6,14 @@ before_install:
   - export DISPLAY=:1.0
   - wget http://downloads.arduino.cc/arduino-1.6.7-linux64.tar.xz
   - tar xf arduino-1.6.7-linux64.tar.xz
-  - wget https://github.com/br3ttb/Arduino-PID-Library/archive/v1.1.1.tar.gz
-  - tar xf v1.1.1.tar.gz
-  - mv Arduino-PID-Library-1.1.1 arduino-1.6.7/libraries/PID_v1
   - wget https://github.com/pololu/qtr-sensors-arduino/archive/2.1.2.tar.gz
   - tar xf 2.1.2.tar.gz
   - mv qtr-sensors-arduino-2.1.2/QTRSensors arduino-1.6.7/libraries/
   - sudo mv arduino-1.6.7 /usr/local/share/arduino
   - sudo ln -s /usr/local/share/arduino/arduino /usr/local/bin/arduino
+
+install:
+  - arduino --install-library "PID"
 
 script:
   - arduino --verify --board ${BOARD} $PWD/gato/gato.pde

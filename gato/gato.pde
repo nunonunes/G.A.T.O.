@@ -26,7 +26,7 @@ int turningSpeedOutside = 110;
 #define EMITTER_PIN     2    // emitter pin
 
 // which pins are the sensor's data lines connected to
-PololuQTRSensorsRC qtrrc((unsigned char[]) {
+QTRSensorsRC qtrrc((unsigned char[]) {
   4,5,6,7,14,15,16,17}
 ,NUM_SENSORS,SENSORS_TIMEOUT,EMITTER_PIN); 
 
