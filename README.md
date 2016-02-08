@@ -1,4 +1,4 @@
-G.A.T.O.
+G.A.T.O. [![Build Status](https://travis-ci.org/nunonunes/G.A.T.O..svg?branch=master)](https://travis-ci.org/nunonunes/G.A.T.O.)
 ========
 
 The brains for a simple arduino-based line following robot.
