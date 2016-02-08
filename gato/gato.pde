@@ -1,4 +1,4 @@
-#include <PololuQTRSensors.h>
+#include <QTRSensors.h>
 #include <PID_v1.h>
 
 
